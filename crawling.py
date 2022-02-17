@@ -12,4 +12,5 @@ products = soup.select('.product_list dd a')
 # pprint(products)
 for product in products:
     # pprint(product)
-    print(product.find('img')['alt'])
+    # pprint(product['class'])
+    pprint([product.find('img')['alt'],product['prod']])
